@@ -1,0 +1,40 @@
+.thong-tin {
+	font-weight: 700;
+}
+table {
+    border-collapse: separate;
+    border-spacing: 0 1em;
+}
+
+table tr td {
+    border-radius: 5px;
+}
+
+.navigation-wrap {
+  padding-top: 10px;
+	text-align: right;
+}
+
+.navigation-wrap a {
+  font-size: 12px;
+  font-weight: 300;
+  background: #222;
+  color: #fff;
+  padding: 10px 24px;
+  -webkit-transition: all 0.3s ease 0s;
+  -moz-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.navigation-wrap a:hover {
+  background: #f6214b;
+}
+
+.navigation-wrap .edit {
+  background: #31B0D5;
+}
+
+.navigation-wrap .delete {
+  background: #C9302C;
+}

@@ -1,0 +1,72 @@
+/* speech bubble */
+.lichtuan_box {
+	margin: 10px;
+	background: #ececec;
+	padding: 20px;
+	position: relative;
+	border-radius: 5px;
+	font-weight: 500;
+	font-size: 15px;
+}
+.sb:after {
+	content: "";
+	width: 0px;
+	height: 0px;
+	position: absolute;
+	border-left: 10px solid transparent;
+	border-right: 10px solid #ececec;
+	border-top: 10px solid transparent;
+	border-bottom: 10px solid transparent;
+	left: -17px;
+}
+/* speech bubble */
+.lichtuan_box a {
+	color: #000;
+}
+.lichtuan_box a:hover {
+	color: #C62D2D;
+}
+.lichtuan_box a:visited {
+	color: #843D75;
+}
+.lich_date {
+	font-size: 12px;
+	color: #999;
+	padding: 10px 0;
+}
+.lich_title {
+	text-align: center;
+	text-transform:uppercase;
+	font-size: 18px;
+	font-weight: 600;
+}
+.lich_content {
+	font-size: 13px !important;
+	font-family: verdana !important;
+	color: #000;
+}
+.lich_content table td {
+	padding: 5px;
+}
+.lich_content table tr:first-child {
+	background: #ccc;
+	font-weight: 700;
+	text-align: center;
+}
+.lich_content table td:first-child, td:nth-child(2), td:nth-child(3) {
+	text-align: center;
+}
+.lich_content table td:last-child {
+	width: 1px;
+	white-space: nowrap;
+}
+@media (max-width: 576px) {
+	.lich_content {
+		font-size: 9px !important;
+	}
+}
+@media (max-width: 320px) {
+	.lich_content {
+		font-size: 8px !important;
+	}
+}

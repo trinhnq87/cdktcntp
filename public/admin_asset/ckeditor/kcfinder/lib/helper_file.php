@@ -210,6 +210,7 @@ class file {
         //Thay thế kí tự Đ và đ bị hàm trim dòng 213 cắt bỏ
         $search   = ['Đ','đ'];
         $filename = str_replace($search,'d',$filename);
+        $filename = str_replace(' ','-',$filename);
         $filename = trim(preg_replace('~[^0-9a-z\.\- ]~i', "", $filename));
         return $filename;
     }

@@ -29,7 +29,9 @@ Chỉnh sửa lịch công tác
 <div class="form-group">
 	<label for="content">Nội dung</label>
 	<textarea id="content" name="content" rows="6" class="form-control">{{ $lich->content }}</textarea>
-	<script> CKEDITOR.replace('content');</script>
+	<script> CKEDITOR.replace('content',{
+		customConfig: '/admin_asset/ckeditor/config_lichtuan.js'
+	});</script>
 </div>
 <div class="form-group">
 	<button type="submit" class="btn btn-primary">Cập nhật</button>

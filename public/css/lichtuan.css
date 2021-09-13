@@ -47,6 +47,7 @@
 }
 .lich_content table td {
 	padding: 5px;
+	border:  1px solid #000 !important;
 }
 .lich_content table tr:first-child {
 	background: #ccc;

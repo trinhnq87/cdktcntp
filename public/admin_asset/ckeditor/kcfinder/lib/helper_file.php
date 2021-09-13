@@ -207,7 +207,10 @@ class file {
         $string = htmlentities($filename, ENT_QUOTES, 'UTF-8');
         if (strpos($string, '&') !== false)
             $filename = html_entity_decode(preg_replace('~&([a-z]{1,2})(?:acute|cedil|circ|grave|lig|orn|ring|slash|tilde|uml);~i', '$1', $string), ENT_QUOTES, 'UTF-8');
-        $filename = trim(preg_replace('~[^0-9a-z\.\- ]~i', "_", $filename));
+        //Thay thế kí tự Đ và đ bị hàm trim dòng 213 cắt bỏ
+        $search   = ['Đ','đ'];
+        $filename = str_replace($search,'d',$filename);
+        $filename = trim(preg_replace('~[^0-9a-z\.\- ]~i', "", $filename));
         return $filename;
     }
 

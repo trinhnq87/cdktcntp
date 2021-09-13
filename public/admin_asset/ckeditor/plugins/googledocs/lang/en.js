@@ -1,5 +1,5 @@
 CKEDITOR.plugins.setLang( 'googledocs', 'en', {
-  button:         'Document',
+  button:         'Document Google Docs',
   title:          'Document settings',
   settingsTab:    'Settings',
   selectDocument: 'Select the document',

@@ -8,7 +8,7 @@
  */
 
 CKEDITOR.plugins.setLang( 'googledocs', 'vi', {
-  button:         'Tài liệu',
+  button:         'Tài liệu Google Docs',
   title:          'Thiết lập tài liệu',
   settingsTab:    'Cấu hình',
   selectDocument: 'Chọn file tài liệu',

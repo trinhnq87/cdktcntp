@@ -25,6 +25,6 @@
 		config.filebrowserImageUploadUrl = '/admin_asset/ckeditor/kcfinder/upload.php?opener=ckeditor&type=images';
 		config.filebrowserFlashUploadUrl = '/admin_asset/ckeditor/kcfinder/upload.php?opener=ckeditor&type=flash';
 		config.filebrowserUploadMethod = 'form';
-		config.disallowedContent = '*{*}'; // All styles disallowed
-		config.extraAllowedContent = 'p,div{text-align}';
+		config.disallowedContent = 'table[style]{*}; span[style]{*}; td[style]{border*}{height}{width}; p[style]{margin*}';
+		//config.disallowedContent = '*[style]{*}'; // All styles disallowed
 	}
